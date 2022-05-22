@@ -3,47 +3,48 @@
     --secondary-text-color: #757575;
     --accent-color: #2196F3;
     --background-element-color: #F5F4FA;
+    --background-secondary-color: #2F303A;
     --hover-text-color: #FFFFFF;
 
 }
 
 body {background-color: #FFFFFF;
-font-family: 'Roboto';
-color: var(--primaty-text-color);}
+font-family: 'Roboto', 'sans-serif';
+color: var(--primaty-text-color);
+font-size: 14px;
+letter-spacing: 0.03em;}
 
 
 /*HEADER*/
-.hero-text {font-family: 'Roboto';
-    font-style: normal;
+.hero-text {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.3;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hover-text-color);}
 .page-header {
     color: var(--primaty-text-color);
 }
+.accent {color: var(--accent-color)}
 /*HEADER NAV & CONTACTS*/
-.site-nav :visited {color: inherit;}
-.site-nav :hover,
-.site-nav :focus
+.nav-link:visited {color: inherit;}
+.nav-link:hover,
+.nav-link:focus
 {color: var(--accent-color)}
-.site-nav {font-style: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;}
-.site-nav .link-current 
+.nav-link {
+    line-height: 1.3;
+    }
+.nav-link .link-current 
     {color: var(--accent-color)}
 
 .contacts :hover,
 .contacts :focus {color: var(--accent-color)
 }
-.contacts{font-style: normal;
+.contacts{
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
+    line-height: 1.3;
+    
     color: var(--secondary-text-color);}
 .nav-link {margin-right: 50px;}
 .mail {margin-right: 50px;}
@@ -60,21 +61,20 @@ a
 /*----------------------------*/
 /*LOGOTYPE*/
 .logo {font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1.19;
     letter-spacing: 0.03em;
-    padding: 24px 1240px 25px 215px;}
+    padding: 24px 1240px 25px 215px;
+    color: var(--primaty-text-color);}
 /*----------------------------*/
 
 /*BUTTON*/
 .hero-button {background-color: var(--accent-color);
 color: var(--hover-text-color);
-font-style: normal;
 font-weight: 700;
 font-size: 16px;
-line-height: 30px;
+line-height: 1.8;
 display: flex;
 align-items: center;
 text-align: center;
@@ -87,10 +87,9 @@ cursor: pointer;}
 
 .button {
     background-color: var(--background-element-color);
-    font-style: normal;
-    font-weight: 500;
+    font-family: inherit;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
     padding: 6px 22px 6px 22px;
     border: transparent;
@@ -100,6 +99,9 @@ cursor: pointer;}
 .button:hover {background: var(--accent-color);
 color: var(--hover-text-color) ;}
 
+.active {background: var(--accent-color);
+    color: var(--hover-text-color) ;}
+
 
 /*----------------------------*/
 /*PORTFOLIO SQUARES*/
@@ -108,85 +110,87 @@ color: var(--hover-text-color) ;}
     height: 404px;
     left: 215px;
     top: 262px;
-    background: #FFFFFF;
+    background: var(--hover-text-color);
     border: 1px solid #EEEEEE;}
-.portfolio h3 {font-family: 'Roboto';
-    font-style: normal;
+.portfolio h3 {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2.0;
     letter-spacing: 0.06em;
     }
-.portfolio p {font-family: 'Roboto';
-    font-style: normal;
+.portfolio p {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.8;
     letter-spacing: 0.03em;
     color: #757575;}
 /*----------------------------*/
 /*FOOTER*/
 .logo-footer {color: var(--hover-text-color);
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1.19;
     letter-spacing: 0.03em;
-    padding: 60px 1240px
-    162px 215px;}
+}
 .footer-address 
-    {color: #FFFFFF;
-    font-style: normal;
+    {font-style: normal;
+        color: var(--hover-text-color);
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 }
-.footer-mail {color: var(--secondary-text-color);
+.footer-mail {color: rgba(255, 255, 255, 0.6);
 }
-.footer-phone {color: var(--secondary-text-color);}
+.footer-phone {color: rgba(255, 255, 255, 0.6);}
 
-.page-footer {background-color: #2F303A;
+.page-footer {background-color:var(--background-secondary-color);
 }
 .footer-contacts :visited {color: inherit;}
 .footer-contacts :hover,
 .footer-contacts :focus {color: var(--accent-color)
 }
-.footer-contacts {font-style: normal;
+.footer-contacts {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.1;
     letter-spacing: 0.03em;}
 
 /*----------------------------*/
-.hat {background-color: #2F303A;}
+.hero {background-color: var(--background-secondary-color);}
 /*Серые бyквы, подписи*/
-.descr-portfolio {font-style: normal;
+.descr-portfolio {
     
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.8;
     color: var(--secondary-text-color);}
-.descr-studio {font-style: normal;
+.descr-text {
     
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     color: var(--secondary-text-color);}
-.descr-photo {font-style: normal;
+.descr-photo {
     
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.1;
     color: var(--secondary-text-color);}
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    
+    color: var(--primaty-text-color);
+    }
 /*-----------------------*/
 /*заголовки*/
-.studio-pec {font-style: normal;
-    font-weight: 700;
+.description {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     }
-.studio-headers {font-style: normal;
-    font-weight: 700;
+.section-title {
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
     }
 /*-----------------------*/
